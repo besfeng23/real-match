@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 const adminLinks = [
   { href: "/admin", label: "Overview" },
@@ -10,7 +11,7 @@ const adminLinks = [
   { href: "/admin/audit-logs", label: "Audit logs" }
 ];
 
-export function AdminLayout({ title, children }: { title: string; children: React.ReactNode }) {
+export function AdminLayout({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="admin-page">
       <aside className="admin-sidebar" aria-label="Admin navigation">
