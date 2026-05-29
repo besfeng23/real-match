@@ -1,6 +1,7 @@
 name: Generate package lock
 
 # Triggered by repository changes or manual workflow dispatch.
+# Recovery trigger: 2026-05-29.
 on:
   workflow_dispatch:
   push:
